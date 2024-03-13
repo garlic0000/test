@@ -1,1 +1,8 @@
 https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/9.0_20191031/cudnn-9.0-windows10-x64-v7.6.5.32.zip
+
+# 训练语句
+# python train.py --batch-size 1 --epochs 5 --data D:/GitHubProjects/yolov5/surprise_detect_test/surprise.yaml --weight ./weights/yolov5s.pt
+# 测试语句
+# python detect.py --source D:/GitHubProjects/yolov5/surprise_detect_test/test/images --weights ./runs/train/exp7/weights/best.pt
+# 实时测试
+#  python detect.py --source 0 --weights ./runs/train/exp7/weights/best.pt
