@@ -1,0 +1,96 @@
+import cv2 as cv
+
+res = {"request_id": "1710560567,e60a8221-8e79-4a28-952e-de346489014c", "time_used": 107, "faces": [
+    {"face_token": "a47b533dbdf21dbc2c3622aae72e8a2f",
+     "face_rectangle": {"top": 340, "left": 466, "width": 367, "height": 367},
+     "landmark": {"contour_chin": {"x": 637, "y": 680}, "contour_left1": {"x": 471, "y": 419},
+                  "contour_left2": {"x": 473, "y": 455}, "contour_left3": {"x": 479, "y": 490},
+                  "contour_left4": {"x": 489, "y": 524}, "contour_left5": {"x": 502, "y": 558},
+                  "contour_left6": {"x": 520, "y": 589}, "contour_left7": {"x": 544, "y": 617},
+                  "contour_left8": {"x": 569, "y": 644}, "contour_left9": {"x": 598, "y": 668},
+                  "contour_right1": {"x": 837, "y": 434}, "contour_right2": {"x": 830, "y": 471},
+                  "contour_right3": {"x": 820, "y": 506}, "contour_right4": {"x": 808, "y": 540},
+                  "contour_right5": {"x": 792, "y": 574}, "contour_right6": {"x": 771, "y": 605},
+                  "contour_right7": {"x": 744, "y": 631}, "contour_right8": {"x": 713, "y": 655},
+                  "contour_right9": {"x": 679, "y": 674}, "left_eye_bottom": {"x": 560, "y": 427},
+                  "left_eye_center": {"x": 562, "y": 421}, "left_eye_left_corner": {"x": 529, "y": 416},
+                  "left_eye_lower_left_quarter": {"x": 544, "y": 423},
+                  "left_eye_lower_right_quarter": {"x": 578, "y": 429}, "left_eye_pupil": {"x": 559, "y": 419},
+                  "left_eye_right_corner": {"x": 595, "y": 429}, "left_eye_top": {"x": 563, "y": 413},
+                  "left_eye_upper_left_quarter": {"x": 546, "y": 413},
+                  "left_eye_upper_right_quarter": {"x": 580, "y": 418},
+                  "left_eyebrow_left_corner": {"x": 503, "y": 375},
+                  "left_eyebrow_lower_left_quarter": {"x": 529, "y": 377},
+                  "left_eyebrow_lower_middle": {"x": 553, "y": 380},
+                  "left_eyebrow_lower_right_quarter": {"x": 579, "y": 387},
+                  "left_eyebrow_right_corner": {"x": 606, "y": 390},
+                  "left_eyebrow_upper_left_quarter": {"x": 529, "y": 364},
+                  "left_eyebrow_upper_middle": {"x": 557, "y": 365},
+                  "left_eyebrow_upper_right_quarter": {"x": 583, "y": 373}, "mouth_left_corner": {"x": 571, "y": 579},
+                  "mouth_lower_lip_bottom": {"x": 635, "y": 621}, "mouth_lower_lip_left_contour1": {"x": 603, "y": 591},
+                  "mouth_lower_lip_left_contour2": {"x": 587, "y": 598},
+                  "mouth_lower_lip_left_contour3": {"x": 607, "y": 614},
+                  "mouth_lower_lip_right_contour1": {"x": 672, "y": 593},
+                  "mouth_lower_lip_right_contour2": {"x": 689, "y": 602},
+                  "mouth_lower_lip_right_contour3": {"x": 665, "y": 616}, "mouth_lower_lip_top": {"x": 636, "y": 598},
+                  "mouth_right_corner": {"x": 710, "y": 583}, "mouth_upper_lip_bottom": {"x": 636, "y": 594},
+                  "mouth_upper_lip_left_contour1": {"x": 621, "y": 577},
+                  "mouth_upper_lip_left_contour2": {"x": 596, "y": 578},
+                  "mouth_upper_lip_left_contour3": {"x": 604, "y": 589},
+                  "mouth_upper_lip_right_contour1": {"x": 652, "y": 578},
+                  "mouth_upper_lip_right_contour2": {"x": 681, "y": 581},
+                  "mouth_upper_lip_right_contour3": {"x": 672, "y": 591}, "mouth_upper_lip_top": {"x": 636, "y": 582},
+                  "nose_contour_left1": {"x": 613, "y": 434}, "nose_contour_left2": {"x": 596, "y": 499},
+                  "nose_contour_left3": {"x": 609, "y": 538}, "nose_contour_lower_middle": {"x": 637, "y": 549},
+                  "nose_contour_right1": {"x": 675, "y": 437}, "nose_contour_right2": {"x": 684, "y": 503},
+                  "nose_contour_right3": {"x": 667, "y": 540}, "nose_left": {"x": 585, "y": 524},
+                  "nose_right": {"x": 693, "y": 528}, "nose_tip": {"x": 638, "y": 524},
+                  "right_eye_bottom": {"x": 728, "y": 437}, "right_eye_center": {"x": 727, "y": 429},
+                  "right_eye_left_corner": {"x": 694, "y": 435}, "right_eye_lower_left_quarter": {"x": 710, "y": 437},
+                  "right_eye_lower_right_quarter": {"x": 745, "y": 433}, "right_eye_pupil": {"x": 724, "y": 427},
+                  "right_eye_right_corner": {"x": 760, "y": 426}, "right_eye_top": {"x": 726, "y": 419},
+                  "right_eye_upper_left_quarter": {"x": 708, "y": 423},
+                  "right_eye_upper_right_quarter": {"x": 743, "y": 420},
+                  "right_eyebrow_left_corner": {"x": 681, "y": 393},
+                  "right_eyebrow_lower_left_quarter": {"x": 710, "y": 393},
+                  "right_eyebrow_lower_middle": {"x": 738, "y": 389},
+                  "right_eyebrow_lower_right_quarter": {"x": 764, "y": 387},
+                  "right_eyebrow_right_corner": {"x": 789, "y": 388},
+                  "right_eyebrow_upper_left_quarter": {"x": 708, "y": 379},
+                  "right_eyebrow_upper_middle": {"x": 737, "y": 372},
+                  "right_eyebrow_upper_right_quarter": {"x": 766, "y": 372}}}], "image_id": "x9msxGUGEGuMvnWYV2EfLw==",
+       "face_num": 1}
+
+res1 = {"request_id":"1710575277,749c49e4-c717-4677-8009-1b1747537544","time_used":260,"faces":[{"face_token":"9700eb2497e6d8fb5123ac0405722730","face_rectangle":{"top":373,"left":247,"width":556,"height":556},"landmark":{"contour_chin":{"x":511,"y":930},"contour_left1":{"x":257,"y":489},"contour_left2":{"x":257,"y":549},"contour_left3":{"x":263,"y":609},"contour_left4":{"x":275,"y":668},"contour_left5":{"x":288,"y":728},"contour_left6":{"x":310,"y":786},"contour_left7":{"x":342,"y":839},"contour_left8":{"x":386,"y":883},"contour_left9":{"x":441,"y":917},"contour_right1":{"x":791,"y":487},"contour_right2":{"x":791,"y":549},"contour_right3":{"x":784,"y":611},"contour_right4":{"x":774,"y":674},"contour_right5":{"x":759,"y":737},"contour_right6":{"x":736,"y":796},"contour_right7":{"x":697,"y":848},"contour_right8":{"x":647,"y":889},"contour_right9":{"x":585,"y":919},"left_eye_bottom":{"x":382,"y":507},"left_eye_center":{"x":385,"y":489},"left_eye_left_corner":{"x":335,"y":486},"left_eye_lower_left_quarter":{"x":355,"y":500},"left_eye_lower_right_quarter":{"x":412,"y":504},"left_eye_pupil":{"x":390,"y":482},"left_eye_right_corner":{"x":438,"y":499},"left_eye_top":{"x":386,"y":465},"left_eye_upper_left_quarter":{"x":357,"y":471},"left_eye_upper_right_quarter":{"x":417,"y":474},"left_eyebrow_left_corner":{"x":284,"y":407},"left_eyebrow_lower_left_quarter":{"x":319,"y":405},"left_eyebrow_lower_middle":{"x":356,"y":405},"left_eyebrow_lower_right_quarter":{"x":395,"y":407},"left_eyebrow_right_corner":{"x":436,"y":405},"left_eyebrow_upper_left_quarter":{"x":315,"y":381},"left_eyebrow_upper_middle":{"x":357,"y":375},"left_eyebrow_upper_right_quarter":{"x":399,"y":382},"mouth_left_corner":{"x":410,"y":767},"mouth_lower_lip_bottom":{"x":513,"y":822},"mouth_lower_lip_left_contour1":{"x":464,"y":769},"mouth_lower_lip_left_contour2":{"x":437,"y":793},"mouth_lower_lip_left_contour3":{"x":469,"y":814},"mouth_lower_lip_right_contour1":{"x":561,"y":770},"mouth_lower_lip_right_contour2":{"x":586,"y":794},"mouth_lower_lip_right_contour3":{"x":556,"y":814},"mouth_lower_lip_top":{"x":513,"y":772},"mouth_right_corner":{"x":613,"y":769},"mouth_upper_lip_bottom":{"x":513,"y":772},"mouth_upper_lip_left_contour1":{"x":486,"y":734},"mouth_upper_lip_left_contour2":{"x":447,"y":750},"mouth_upper_lip_left_contour3":{"x":464,"y":770},"mouth_upper_lip_right_contour1":{"x":540,"y":735},"mouth_upper_lip_right_contour2":{"x":577,"y":751},"mouth_upper_lip_right_contour3":{"x":561,"y":771},"mouth_upper_lip_top":{"x":513,"y":742},"nose_contour_left1":{"x":474,"y":496},"nose_contour_left2":{"x":457,"y":604},"nose_contour_left3":{"x":476,"y":666},"nose_contour_lower_middle":{"x":515,"y":677},"nose_contour_right1":{"x":555,"y":496},"nose_contour_right2":{"x":571,"y":604},"nose_contour_right3":{"x":553,"y":665},"nose_left":{"x":443,"y":649},"nose_right":{"x":587,"y":648},"nose_tip":{"x":513,"y":631},"right_eye_bottom":{"x":642,"y":503},"right_eye_center":{"x":639,"y":486},"right_eye_left_corner":{"x":584,"y":497},"right_eye_lower_left_quarter":{"x":612,"y":501},"right_eye_lower_right_quarter":{"x":670,"y":496},"right_eye_pupil":{"x":643,"y":479},"right_eye_right_corner":{"x":692,"y":484},"right_eye_top":{"x":637,"y":462},"right_eye_upper_left_quarter":{"x":606,"y":472},"right_eye_upper_right_quarter":{"x":668,"y":467},"right_eyebrow_left_corner":{"x":577,"y":418},"right_eyebrow_lower_left_quarter":{"x":617,"y":413},"right_eyebrow_lower_middle":{"x":656,"y":406},"right_eyebrow_lower_right_quarter":{"x":694,"y":404},"right_eyebrow_right_corner":{"x":733,"y":405},"right_eyebrow_upper_left_quarter":{"x":608,"y":389},"right_eyebrow_upper_middle":{"x":651,"y":378},"right_eyebrow_upper_right_quarter":{"x":695,"y":381}}}],"image_id":"/izC/f8prBkFiU3QL/Tkiw==","face_num":1}
+res2 = {"request_id":"1710575310,489ca787-4396-4387-aa13-602d11f437aa","time_used":192,"faces":[{"face_token":"b290f6c071b98bc591208ed2fb344bde","face_rectangle":{"top":391,"left":188,"width":597,"height":597},"landmark":{"contour_chin":{"x":527,"y":978},"contour_left1":{"x":194,"y":490},"contour_left2":{"x":190,"y":562},"contour_left3":{"x":190,"y":635},"contour_left4":{"x":198,"y":709},"contour_left5":{"x":217,"y":780},"contour_left6":{"x":253,"y":844},"contour_left7":{"x":305,"y":897},"contour_left8":{"x":368,"y":939},"contour_left9":{"x":442,"y":969},"contour_right1":{"x":783,"y":484},"contour_right2":{"x":787,"y":551},"contour_right3":{"x":786,"y":618},"contour_right4":{"x":781,"y":686},"contour_right5":{"x":772,"y":756},"contour_right6":{"x":753,"y":822},"contour_right7":{"x":719,"y":882},"contour_right8":{"x":669,"y":930},"contour_right9":{"x":605,"y":964},"left_eye_bottom":{"x":381,"y":501},"left_eye_center":{"x":383,"y":485},"left_eye_left_corner":{"x":329,"y":485},"left_eye_lower_left_quarter":{"x":352,"y":496},"left_eye_lower_right_quarter":{"x":412,"y":498},"left_eye_pupil":{"x":380,"y":476},"left_eye_right_corner":{"x":440,"y":493},"left_eye_top":{"x":384,"y":460},"left_eye_upper_left_quarter":{"x":353,"y":467},"left_eye_upper_right_quarter":{"x":416,"y":469},"left_eyebrow_left_corner":{"x":290,"y":441},"left_eyebrow_lower_left_quarter":{"x":329,"y":434},"left_eyebrow_lower_middle":{"x":371,"y":436},"left_eyebrow_lower_right_quarter":{"x":415,"y":443},"left_eyebrow_right_corner":{"x":461,"y":446},"left_eyebrow_upper_left_quarter":{"x":326,"y":409},"left_eyebrow_upper_middle":{"x":373,"y":404},"left_eyebrow_upper_right_quarter":{"x":421,"y":414},"mouth_left_corner":{"x":420,"y":755},"mouth_lower_lip_bottom":{"x":527,"y":782},"mouth_lower_lip_left_contour1":{"x":473,"y":756},"mouth_lower_lip_left_contour2":{"x":452,"y":770},"mouth_lower_lip_left_contour3":{"x":487,"y":779},"mouth_lower_lip_right_contour1":{"x":581,"y":760},"mouth_lower_lip_right_contour2":{"x":603,"y":777},"mouth_lower_lip_right_contour3":{"x":567,"y":783},"mouth_lower_lip_top":{"x":527,"y":758},"mouth_right_corner":{"x":634,"y":763},"mouth_upper_lip_bottom":{"x":527,"y":761},"mouth_upper_lip_left_contour1":{"x":503,"y":740},"mouth_upper_lip_left_contour2":{"x":460,"y":744},"mouth_upper_lip_left_contour3":{"x":471,"y":756},"mouth_upper_lip_right_contour1":{"x":552,"y":741},"mouth_upper_lip_right_contour2":{"x":596,"y":747},"mouth_upper_lip_right_contour3":{"x":582,"y":759},"mouth_upper_lip_top":{"x":527,"y":745},"nose_contour_left1":{"x":483,"y":494},"nose_contour_left2":{"x":462,"y":590},"nose_contour_left3":{"x":483,"y":654},"nose_contour_lower_middle":{"x":529,"y":663},"nose_contour_right1":{"x":564,"y":497},"nose_contour_right2":{"x":587,"y":591},"nose_contour_right3":{"x":569,"y":654},"nose_left":{"x":442,"y":637},"nose_right":{"x":605,"y":637},"nose_tip":{"x":534,"y":609},"right_eye_bottom":{"x":647,"y":506},"right_eye_center":{"x":645,"y":488},"right_eye_left_corner":{"x":590,"y":495},"right_eye_lower_left_quarter":{"x":617,"y":502},"right_eye_lower_right_quarter":{"x":676,"y":500},"right_eye_pupil":{"x":641,"y":480},"right_eye_right_corner":{"x":696,"y":488},"right_eye_top":{"x":645,"y":462},"right_eye_upper_left_quarter":{"x":613,"y":471},"right_eye_upper_right_quarter":{"x":676,"y":469},"right_eyebrow_left_corner":{"x":592,"y":445},"right_eyebrow_lower_left_quarter":{"x":633,"y":440},"right_eyebrow_lower_middle":{"x":672,"y":434},"right_eyebrow_lower_right_quarter":{"x":708,"y":434},"right_eyebrow_right_corner":{"x":741,"y":442},"right_eyebrow_upper_left_quarter":{"x":627,"y":415},"right_eyebrow_upper_middle":{"x":670,"y":405},"right_eyebrow_upper_right_quarter":{"x":713,"y":411}}}],"image_id":"iId+zAJNMek8tcH6VY0Ebg==","face_num":1}
+res3 = {"request_id":"1710575709,5ddfcb9f-1794-4519-af25-1ad4b97b0b80","time_used":232,"faces":[{"face_token":"49b52d2323f5b5adfdb7ddb6297d8229","face_rectangle":{"top":391,"left":188,"width":597,"height":597},"landmark":{"contour_chin":{"x":527,"y":978},"contour_left1":{"x":198,"y":446},"contour_left10":{"x":245,"y":832},"contour_left11":{"x":272,"y":866},"contour_left12":{"x":305,"y":897},"contour_left13":{"x":341,"y":923},"contour_left14":{"x":382,"y":946},"contour_left15":{"x":426,"y":964},"contour_left16":{"x":475,"y":975},"contour_left2":{"x":194,"y":490},"contour_left3":{"x":191,"y":533},"contour_left4":{"x":189,"y":577},"contour_left5":{"x":190,"y":620},"contour_left6":{"x":192,"y":664},"contour_left7":{"x":198,"y":709},"contour_left8":{"x":207,"y":752},"contour_left9":{"x":223,"y":794},"contour_right1":{"x":778,"y":442},"contour_right10":{"x":758,"y":810},"contour_right11":{"x":742,"y":847},"contour_right12":{"x":719,"y":882},"contour_right13":{"x":691,"y":912},"contour_right14":{"x":657,"y":938},"contour_right15":{"x":619,"y":958},"contour_right16":{"x":576,"y":972},"contour_right2":{"x":783,"y":484},"contour_right3":{"x":786,"y":524},"contour_right4":{"x":787,"y":564},"contour_right5":{"x":786,"y":604},"contour_right6":{"x":784,"y":645},"contour_right7":{"x":781,"y":686},"contour_right8":{"x":777,"y":728},"contour_right9":{"x":769,"y":770},"left_eye_bottom":{"x":381,"y":501},"left_eye_center":{"x":380,"y":476},"left_eye_left_corner":{"x":329,"y":485},"left_eye_lower_left_quarter":{"x":352,"y":496},"left_eye_lower_right_quarter":{"x":412,"y":498},"left_eye_pupil":{"x":380,"y":476},"left_eye_right_corner":{"x":440,"y":493},"left_eye_top":{"x":384,"y":460},"left_eye_upper_left_quarter":{"x":353,"y":467},"left_eye_upper_right_quarter":{"x":416,"y":469},"left_eyebrow_left_corner":{"x":290,"y":441},"left_eyebrow_lower_left_quarter":{"x":329,"y":434},"left_eyebrow_lower_middle":{"x":371,"y":436},"left_eyebrow_lower_right_corner":{"x":458,"y":458},"left_eyebrow_lower_right_quarter":{"x":415,"y":443},"left_eyebrow_upper_left_quarter":{"x":326,"y":409},"left_eyebrow_upper_middle":{"x":373,"y":404},"left_eyebrow_upper_right_corner":{"x":463,"y":435},"left_eyebrow_upper_right_quarter":{"x":421,"y":414},"mouth_left_corner":{"x":420,"y":755},"mouth_lower_lip_bottom":{"x":527,"y":782},"mouth_lower_lip_left_contour1":{"x":473,"y":756},"mouth_lower_lip_left_contour2":{"x":452,"y":770},"mouth_lower_lip_left_contour3":{"x":487,"y":779},"mouth_lower_lip_right_contour1":{"x":581,"y":760},"mouth_lower_lip_right_contour2":{"x":603,"y":777},"mouth_lower_lip_right_contour3":{"x":567,"y":783},"mouth_lower_lip_top":{"x":527,"y":758},"mouth_right_corner":{"x":634,"y":763},"mouth_upper_lip_bottom":{"x":527,"y":761},"mouth_upper_lip_left_contour1":{"x":503,"y":740},"mouth_upper_lip_left_contour2":{"x":460,"y":744},"mouth_upper_lip_left_contour3":{"x":436,"y":756},"mouth_upper_lip_left_contour4":{"x":471,"y":756},"mouth_upper_lip_right_contour1":{"x":552,"y":741},"mouth_upper_lip_right_contour2":{"x":596,"y":747},"mouth_upper_lip_right_contour3":{"x":618,"y":763},"mouth_upper_lip_right_contour4":{"x":582,"y":759},"mouth_upper_lip_top":{"x":527,"y":745},"nose_bridge1":{"x":525,"y":474},"nose_bridge2":{"x":528,"y":519},"nose_bridge3":{"x":531,"y":564},"nose_left_contour1":{"x":483,"y":494},"nose_left_contour2":{"x":462,"y":590},"nose_left_contour3":{"x":442,"y":637},"nose_left_contour4":{"x":469,"y":651},"nose_left_contour5":{"x":498,"y":656},"nose_middle_contour":{"x":529,"y":663},"nose_right_contour1":{"x":564,"y":497},"nose_right_contour2":{"x":587,"y":591},"nose_right_contour3":{"x":605,"y":637},"nose_right_contour4":{"x":582,"y":651},"nose_right_contour5":{"x":557,"y":656},"nose_tip":{"x":534,"y":609},"right_eye_bottom":{"x":647,"y":506},"right_eye_center":{"x":641,"y":480},"right_eye_left_corner":{"x":590,"y":495},"right_eye_lower_left_quarter":{"x":617,"y":502},"right_eye_lower_right_quarter":{"x":676,"y":500},"right_eye_pupil":{"x":641,"y":480},"right_eye_right_corner":{"x":696,"y":488},"right_eye_top":{"x":645,"y":462},"right_eye_upper_left_quarter":{"x":613,"y":471},"right_eye_upper_right_quarter":{"x":676,"y":469},"right_eyebrow_lower_left_corner":{"x":594,"y":455},"right_eyebrow_lower_left_quarter":{"x":633,"y":440},"right_eyebrow_lower_middle":{"x":672,"y":434},"right_eyebrow_lower_right_quarter":{"x":708,"y":434},"right_eyebrow_right_corner":{"x":741,"y":442},"right_eyebrow_upper_left_corner":{"x":589,"y":435},"right_eyebrow_upper_left_quarter":{"x":627,"y":415},"right_eyebrow_upper_middle":{"x":670,"y":405},"right_eyebrow_upper_right_quarter":{"x":713,"y":411}}}],"image_id":"iId+zAJNMek8tcH6VY0Ebg==","face_num":1}
+
+
+def getpoints(res):
+    # 获取landmark 点标记 坐标数据
+    face0 = res["faces"][0]
+    landmark = face0["landmark"]
+    # print(landmark)
+    points = []
+    for value in landmark.values():
+        # {'x': 637, 'y': 680}
+        points.append((value['x'], value['y']))
+    # print(points)
+    return points
+
+
+def main():
+    # img = cv.imread("D:/DockerProject/detect/EP03_1-352.jpg", cv.IMREAD_COLOR)
+    img = cv.imread("C:/Users/garlic/Downloads/test2.jpg", cv.IMREAD_COLOR)
+    # img = cv.imread("C:/Users/garlic/Downloads/test2.jpg", cv.IMREAD_COLOR)
+    points = getpoints()
+    for point in points:
+        cv.circle(img, point, 2, (0, 255, 0), 2)
+    cv.imwrite("C:/Users/garlic/Downloads/dtest2.jpg", img)
+    cv.imshow("face",  img)
+    cv.waitKey(0)
+    cv.destroyWindow("face")
+
+
+if __name__ == "__main__":
+    main()
