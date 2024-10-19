@@ -11,6 +11,11 @@ cmake \
     -DCUDA_ARCH_BIN="5.0;5.2;6.0;6.1;7.0;7.5" \
     -DCUDA_ARCH_PTX="6.0;6.1" \
     -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda \
+    # CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+    # Please set them or make sure they are set and tested correctly in the CMake files:
+    # CUDA_CUDA_LIBRARY (ADVANCED)
+    # linked by target "opencv_cudacodec" in directory /kaggle/working/opencv_build/opencv_contrib/modules/cudacodec
+    -DCUDA_CUDA_LIBRARY=/usr/local/cuda/lib64/libcudart.so \
     -DPYTHON3_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python \
     -DPYTHON3_INCLUDE_DIR=/opt/conda/envs/newCondaEnvironment/include/python3.10 \
     -DPYTHON3_LIBRARY=/opt/conda/envs/newCondaEnvironment/lib/libpython3.10.so \
