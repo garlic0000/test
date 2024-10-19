@@ -1,4 +1,5 @@
-cmake -DCMAKE_BUILD_TYPE=Release \
+cmake \
+      -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=/usr/local \
       -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
       -DWITH_CUDA=ON \
