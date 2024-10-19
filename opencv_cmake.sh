@@ -18,8 +18,6 @@ cmake \
     -DPYTHON3_LIBRARY=/opt/conda/envs/newCondaEnvironment/lib/libpython3.10.so \
     -DOpenBLAS_INCLUDE_DIR=/usr/include/x86_64-linux-gnu/openblas-pthread \
     -DOpenBLAS_LIB=/usr/lib/x86_64-linux-gnu/libopenblas.so \
-    -DLAPACKE_INCLUDE_DIR=/usr/include \
-    -DLAPACKE_LIBRARIES=/usr/lib/x86_64-linux-gnu/liblapacke.so \
     -DBUILD_SHARED_LIBS=OFF \
     -DWITH_SIMD=ON \
     -S $OPENCV_SOURCE_DIR \
