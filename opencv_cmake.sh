@@ -20,6 +20,7 @@ cmake \
     -DLAPACKE_INCLUDE_DIR=/usr/include \
     -DLAPACKE_LIBRARIES=/usr/lib/x86_64-linux-gnu/liblapacke.so \
     -DBUILD_SHARED_LIBS=OFF \
+    -DWITH_SIMD=ON \
     -S $OPENCV_SOURCE_DIR \
     -B $OPENCV_BUILD_DIR
 

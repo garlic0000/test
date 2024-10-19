@@ -27,6 +27,10 @@ cmake \
     # C/C++:
           #    Built as dynamic libs?:      NO
     -DBUILD_SHARED_LIBS=OFF \
+    # JPEG:                        build-libjpeg-turbo (ver 3.0.3-70)
+          #      SIMD Support Request:      YES
+          #      SIMD Support:              YES
+    -DWITH_SIMD=ON \
     -S $OPENCV_SOURCE_DIR \
     -B $OPENCV_BUILD_DIR
 
