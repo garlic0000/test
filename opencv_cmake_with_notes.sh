@@ -14,6 +14,8 @@ cmake \
     -DPYTHON3_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python \
     -DPYTHON3_INCLUDE_DIR=/opt/conda/envs/newCondaEnvironment/include/python3.10 \
     -DPYTHON3_LIBRARY=/opt/conda/envs/newCondaEnvironment/lib/libpython3.10.so \
+    # C/C++:
+          #    Built as dynamic libs?:      NO
     -DBUILD_SHARED_LIBS=OFF \
     -S $OPENCV_SOURCE_DIR \
     -B $OPENCV_BUILD_DIR
