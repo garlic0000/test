@@ -1,7 +1,7 @@
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
-    -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
+    -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
     -DWITH_CUDA=ON \
     -DCUDA_ARCH_BIN="5.0;5.2;6.0;6.1;7.0;7.5" \
     -DCUDA_ARCH_PTX="6.0;6.1" \
