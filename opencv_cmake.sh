@@ -20,6 +20,8 @@ cmake \
     -DOpenBLAS_LIB=/usr/lib/x86_64-linux-gnu/libopenblas.so \
     -DBUILD_SHARED_LIBS=OFF \
     -DWITH_SIMD=ON \
+    -DOPENSSL_ROOT_DIR=/usr \
+    -DOPENSSL_LIBRARIES=/usr/lib/x86_64-linux-gnu \
     -S $OPENCV_SOURCE_DIR \
     -B $OPENCV_BUILD_DIR
 
