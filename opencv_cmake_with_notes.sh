@@ -30,7 +30,12 @@ cmake \
     # JPEG:                        build-libjpeg-turbo (ver 3.0.3-70)
           #      SIMD Support Request:      YES
           #      SIMD Support:              YES
-    -DWITH_SIMD=ON \
+    -DBUILD_JPEG=ON \           # 强制使用内置 libjpeg
+    -DBUILD_PNG=ON \            # 强制使用内置 libpng
+    -DBUILD_TIFF=ON \           # 强制使用内置 libtiff
+    -DBUILD_WEBP=ON \           # 强制使用内置 libwebp
+    -DBUILD_OPENEXR=ON \        # 强制使用内置 OpenEXR
+    -DBUILD_JPEG2K=ON \         # 强制使用内置 JPEG 2000（OpenJPEG）
     -S $OPENCV_SOURCE_DIR \
     -B $OPENCV_BUILD_DIR
 
