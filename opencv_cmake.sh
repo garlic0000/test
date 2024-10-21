@@ -1,12 +1,9 @@
 #!/bin/bash
 
-OPENCV_SOURCE_DIR=/kaggle/working/opencv_build/opencv
-OPENCV_BUILD_DIR=/kaggle/working/opencv_build/opencv/build
-OPENCV_EXTRA_MODULES_PATH=/kaggle/working/opencv_build/opencv_contrib/modules
+export ENABLE_CONTRIB=1
+
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=/usr/local \
-    -DOPENCV_EXTRA_MODULES_PATH=$OPENCV_EXTRA_MODULES_PATH \
     -DWITH_CUDA=ON \
     -DCUDA_ARCH_BIN="5.0;5.2;6.0;6.1;7.0;7.5" \
     -DCUDA_ARCH_PTX="6.0;6.1" \
@@ -24,6 +21,6 @@ cmake \
     -DBUILD_WEBP=ON \
     -DBUILD_OPENEXR=ON \
     -DBUILD_JPEG2K=ON \
-    -S $OPENCV_SOURCE_DIR \
-    -B $OPENCV_BUILD_DIR
+
+
 
