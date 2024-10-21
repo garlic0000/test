@@ -8,8 +8,8 @@ cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DOPENCV_EXTRA_MODULES_PATH=$OPENCV_EXTRA_MODULES_PATH \
     -DWITH_CUDA=ON \
-    -DCUDA_ARCH_BIN="5.0;5.2;6.0;6.1;7.0;7.5" \
-    -DCUDA_ARCH_PTX="6.0;6.1" \
+    -DCUDA_ARCH_BIN='5.0;5.2;6.0;6.1;7.0;7.5' \
+    -DCUDA_ARCH_PTX='6.0;6.1' \
     -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda \
     -DBUILD_opencv_python3=ON \
     -DBUILD_opencv_python2=OFF \
