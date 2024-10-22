@@ -13,8 +13,8 @@ cmake \
     -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda \
     -DBUILD_opencv_python3=ON \
     -DBUILD_opencv_python2=OFF \
-    -DPYTHON3_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python \
-    -DPYTHON_DEFAULT_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python \
+    -DPYTHON3_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python3.10 \
+    -DPYTHON_DEFAULT_EXECUTABLE=/opt/conda/envs/newCondaEnvironment/bin/python3.10 \
     -DPYTHON3_INCLUDE_DIR=/opt/conda/envs/newCondaEnvironment/include/python3.10 \
     -DPYTHON3_LIBRARY=/opt/conda/envs/newCondaEnvironment/lib/libpython3.10.so \
     -DOPENCV_PYTHON3_INSTALL_PATH=python \
