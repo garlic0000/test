@@ -20,7 +20,7 @@ cmake \
     -DOPENCV_PYTHON3_INSTALL_PATH=python \
     -DPYTHON3_LIMITED_API=ON \
     -DINSTALL_CREATE_DISTRIB=ON \
-    -DBUILD_opencv_apps=OFF \
+    -DBUILD_opencv_apps=///OFF \
     -DBUILD_opencv_freetype=OFF \
     -DBUILD_SHARED_LIBS=OFF \
     -DBUILD_TESTS=OFF \
