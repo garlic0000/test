@@ -1,6 +1,6 @@
 def main():
     #
-    str1 = "A comprehensive survey on facial micro-expression: approaches and databases"
+    str1 = "Neural Machine Translation by Jointly Learning to Align and Translate"
     str2 = str1.replace(' ', '_')
     str3 = str2.replace(':', '')
     print(str3)
